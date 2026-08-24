@@ -740,3 +740,59 @@ svg { width: 1em; height: 1em; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+/* Prevent horizontal scrolling on mobile */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#root,
+main {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
+@media (max-width: 720px) {
+  /* These off-screen decorations can expand the mobile page width */
+  .hero::before,
+  .ambient {
+    display: none;
+  }
+
+  .shell,
+  .hero,
+  .portrait-stage,
+  .about-grid,
+  .skill-grid,
+  .project-list,
+  .project-card,
+  .project-copy,
+  .project-system,
+  .system-canvas,
+  .journey-grid,
+  .contact,
+  .site-footer {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .hero,
+  .portrait-stage,
+  .section,
+  .project-system,
+  .system-canvas {
+    overflow-x: hidden;
+    overflow-x: clip;
+  }
+
+  .portrait-orbit,
+  .portrait-orbit-two,
+  .contact-orbit {
+    max-width: 95vw;
+    max-height: 95vw;
+  }
+}
