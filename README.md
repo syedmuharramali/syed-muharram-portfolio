@@ -1,16 +1,45 @@
-# React + Vite
+# Syed Muharram Ali — Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive personal portfolio for Syed Muharram Ali, a MERN Stack Developer based in Gilgit, Pakistan.
 
-Currently, two official plugins are available:
+## Highlights
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive dark violet and blue interface
+- About, skills, selected work, education, and contact sections
+- ShopEase live deployment and source-code links
+- InvoFlow full-stack case study
+- Direct email, WhatsApp, LinkedIn, and GitHub contact options
+- Accessible navigation and reduced-motion support
+- Open Graph social-sharing image and metadata
 
-## React Compiler
+## Technology
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- Tailwind CSS v4
+- Custom CSS for advanced motion and visual effects
+- Inline SVG icons
 
-## Expanding the Oxlint configuration
+## Run locally
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```bash
+npm install
+npm run dev
+```
+
+## Production build
+
+```bash
+npm run build
+npm run preview
+```
+
+## Deployment
+
+Import this repository into Vercel. Use `npm run build` as the build command and `dist` as the output directory.
+
+## Contact
+
+- [LinkedIn](https://www.linkedin.com/in/syedmuharramali/)
+- [GitHub](https://github.com/syedmuharramali)
+- Email: syedmuharramali.dev@gmail.com
