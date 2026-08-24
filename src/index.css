@@ -1,5 +1,415 @@
 @import "tailwindcss";
+/* Mobile phone optimization */
+@media (max-width: 480px) {
+  .shell {
+    width: calc(100% - 24px);
+  }
 
+  .section {
+    padding-block: 68px;
+  }
+
+  /* Header */
+  .site-header {
+    top: 8px;
+    width: calc(100% - 20px);
+    height: 60px;
+    margin-top: 8px;
+    padding: 0 10px;
+    border-radius: 15px;
+  }
+
+  .brand > span:first-child {
+    width: 34px;
+    height: 34px;
+    font-size: 10px;
+  }
+
+  .nav-cta {
+    padding: 9px 11px;
+    font-size: 11px;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 58px 0 48px;
+    gap: 20px;
+  }
+
+  .hero-topline {
+    margin-bottom: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .hero-topline > p {
+    padding-left: 0;
+    border-left: 0;
+    font-size: 7px;
+  }
+
+  .availability {
+    padding: 6px 9px;
+    font-size: 10px;
+  }
+
+  .eyebrow {
+    font-size: 9px;
+    line-height: 1.6;
+    letter-spacing: 0.16em;
+  }
+
+  .hero h1 {
+    margin: 14px 0 20px;
+    font-size: clamp(40px, 12.8vw, 56px);
+    line-height: 1;
+    letter-spacing: -0.055em;
+  }
+
+  .hero-lede {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .hero-actions,
+  .project-actions,
+  .contact-actions {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .hero-actions {
+    margin-top: 26px;
+  }
+
+  .hero-actions .button,
+  .project-actions .button,
+  .contact-actions .button {
+    width: 100%;
+  }
+
+  .button {
+    min-height: 48px;
+    padding-inline: 15px;
+  }
+
+  .proof-row {
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .proof-row div {
+    min-width: 0;
+  }
+
+  .proof-row strong {
+    font-size: 20px;
+  }
+
+  .proof-row span {
+    font-size: 8px;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+  }
+
+  /* Portrait */
+  .portrait-stage {
+    min-height: 350px;
+    margin-top: 6px;
+  }
+
+  .portrait-frame {
+    width: min(300px, 84vw);
+  }
+
+  .portrait-orbit {
+    width: min(330px, 88vw);
+    height: min(330px, 88vw);
+  }
+
+  .portrait-orbit-two {
+    width: min(270px, 72vw);
+    height: min(270px, 72vw);
+  }
+
+  .stack-card {
+    left: 0;
+    bottom: 0;
+    width: 178px;
+    padding: 10px 12px;
+  }
+
+  .stack-card-top {
+    margin-bottom: 8px;
+  }
+
+  .stack-card code {
+    font-size: 8px;
+    line-height: 1.55;
+  }
+
+  .location-pill {
+    right: 0;
+    top: 45px;
+    padding: 7px 9px;
+    font-size: 9px;
+  }
+
+  .location-pill span {
+    font-size: 14px;
+  }
+
+  .micro-pill {
+    display: none;
+  }
+
+  .marquee > div {
+    padding-block: 15px;
+    gap: 26px;
+    font-size: 9px;
+  }
+
+  /* About and skills */
+  .about h2,
+  .section-heading h2 {
+    font-size: clamp(34px, 10.5vw, 44px);
+  }
+
+  .about-copy p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .section-heading > p {
+    font-size: 14px;
+  }
+
+  .skill-grid {
+    margin-top: 36px;
+  }
+
+  .skill-card {
+    padding: 22px;
+    border-radius: 16px;
+  }
+
+  .skill-card h3 {
+    margin-top: 24px;
+    font-size: 25px;
+  }
+
+  .chips {
+    margin-top: 24px;
+  }
+
+  /* Projects */
+  .work-heading h2 {
+    margin-top: 22px;
+    font-size: clamp(38px, 12vw, 50px);
+  }
+
+  .project-list {
+    margin-top: 40px;
+    gap: 20px;
+  }
+
+  .project-card {
+    border-radius: 18px;
+  }
+
+  .project-copy {
+    padding: 24px 18px 28px;
+  }
+
+  .project-label {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .project-label i {
+    max-width: none;
+    text-align: left;
+  }
+
+  .project-label i::before {
+    flex-shrink: 0;
+  }
+
+  .project-index {
+    margin-top: 36px;
+  }
+
+  .project-copy h3 {
+    font-size: clamp(42px, 14vw, 58px);
+  }
+
+  .project-lede {
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .project-highlights {
+    margin-top: 30px;
+  }
+
+  .project-actions {
+    margin-top: 28px;
+  }
+
+  .project-system {
+    padding: 10px;
+  }
+
+  .system-topbar {
+    height: 42px;
+    padding-inline: 10px;
+  }
+
+  .system-topbar i {
+    font-size: 7px;
+  }
+
+  .system-canvas {
+    min-height: 0;
+    padding: 26px 14px 18px;
+  }
+
+  .system-title > strong {
+    font-size: clamp(27px, 8.8vw, 36px);
+  }
+
+  .flow {
+    margin: 30px 0;
+    gap: 8px;
+  }
+
+  .flow > div {
+    padding: 14px 12px;
+  }
+
+  .system-stats {
+    gap: 7px;
+  }
+
+  .system-stats > div {
+    padding: 13px 10px;
+  }
+
+  .system-footer {
+    margin-top: 28px;
+    padding-top: 20px;
+    gap: 7px 14px;
+  }
+
+  /* Journey */
+  .journey-grid > div {
+    min-height: auto;
+    padding: 28px 18px;
+  }
+
+  .journey-label {
+    margin-bottom: 25px;
+  }
+
+  .journey-grid h2 {
+    font-size: clamp(28px, 9vw, 38px);
+  }
+
+  /* Contact */
+  .contact {
+    min-height: 620px;
+    padding-block: 75px;
+  }
+
+  .contact-status {
+    margin: 30px 0 0;
+    justify-content: center;
+    text-align: center;
+    font-size: 8px;
+  }
+
+  .contact-overline {
+    margin: 35px 0 10px;
+    font-size: 9px;
+    line-height: 1.6;
+  }
+
+  .contact h2 {
+    font-size: clamp(40px, 12.5vw, 54px);
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+  }
+
+  .contact-copy {
+    margin-top: 24px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .contact-email {
+    font-size: 10px;
+    overflow-wrap: anywhere;
+  }
+
+  .contact-orbit {
+    width: min(360px, 90vw);
+    height: min(360px, 90vw);
+  }
+
+  .contact-socials {
+    gap: 18px;
+  }
+
+  /* Footer */
+  .site-footer {
+    padding: 25px 0 32px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+    text-align: center;
+  }
+
+  .site-footer p {
+    margin: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .proof-row {
+    gap: 5px;
+  }
+
+  .proof-row span {
+    font-size: 7px;
+  }
+
+  .portrait-stage {
+    min-height: 320px;
+  }
+
+  .stack-card {
+    width: 165px;
+  }
+
+  .system-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .contact h2 {
+    font-size: 38px;
+  }
+}
 :root {
   --ink: #f4f3ff;
   --muted: #a7a5b8;
